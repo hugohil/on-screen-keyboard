@@ -96,17 +96,15 @@
 /*-----[Customisable styles]--------------------------------------------------*/
 
 #osk-container {
-	width: 47%;     /* Account for 2% padding and a vertical scroll bar */
+	width: 95%;     /* Account for 2% padding and a vertical scroll bar */
 	min-width: 500px;
 	max-width: 1200px;
 	background: #EEE;
-	border-radius: 5%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #osk-container > li {
 	background: #DDD;
-	border-radius: 10%;
 	-moz-transition: 0.5s;
 }
 
