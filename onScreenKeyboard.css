@@ -121,3 +121,18 @@
 .osk-focused {
 	background: #FAFAFA !important;
 }
+
+#osk-container.is-numeric {
+	width: 500px;
+	left: 25% !important;
+}
+
+#osk-container.is-numeric > .osk-number {
+	width: 32%;
+}
+
+#osk-container.is-numeric > .osk-hide,
+#osk-container.is-numeric > .osk-return {
+	margin: 0 0.726744186% 5px 0 !important;
+	width: 32%;
+}

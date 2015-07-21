@@ -43,6 +43,8 @@
 		function activateInput($input) {
 			var inputOptionsString = $input.attr('data-osk-options');
 			$keys.removeClass('osk-disabled');
+			$keys.show();
+			$('#osk-container').removeClass('is-numeric');
 			$keyboardTriggers.removeClass('osk-focused');
 			if (inputOptionsString !== undefined) {
 				inputOptions = inputOptionsString.split(' ');
@@ -55,7 +57,10 @@
 				if ($.inArray('disableReturn', inputOptions) > -1) {
 					$returnKey.addClass('osk-disabled');
 				}
-
+				if ($.inArray('isNumeric', inputOptions) > -1) {
+					$('#osk-container').addClass('is-numeric');
+					$('#osk-container > li:not(.osk-number, .osk-hide, .osk-space, .osk-return)').hide();
+				}
 			}
 			$input.addClass('osk-focused').focus();
 		}

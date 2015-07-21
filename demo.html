@@ -38,6 +38,7 @@
 			<input type="text" id="input1" class="osk-trigger" placeholder="disable return" data-osk-options="disableReturn">
 			<input type="text" id="input2" class="osk-trigger" placeholder="disable symbols" data-osk-options="disableSymbols">
 			<input type="text" id="input3" class="osk-trigger" placeholder="enable everything">
+			<input type="text" id="input3" class="osk-trigger" placeholder="numeric pad" data-osk-options="isNumeric">
 			<textarea id="input4" class="osk-trigger" placeholder="enable everything"></textarea>
 		</form>
 
@@ -48,7 +49,8 @@
 				$('#input_container').children('.osk-trigger').onScreenKeyboard({
 					rewireReturn : 'submit',
 					rewireTab : true,
-					leftPosition: '2%'
+					leftPosition: '2%',
+					topPosition: '50%'
 				});
 			});
 		</script>
