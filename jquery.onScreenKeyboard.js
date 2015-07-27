@@ -59,7 +59,7 @@
 				}
 				if ($.inArray('isNumeric', inputOptions) > -1) {
 					$('#osk-container').addClass('is-numeric');
-					$('#osk-container > li:not(.osk-number, .osk-hide, .osk-space, .osk-return)').hide();
+					$('#osk-container > li:not(.osk-number, .osk-hide, .osk-space, .osk-return, .osk-backspace)').hide();
 				}
 			}
 			$input.addClass('osk-focused').focus();

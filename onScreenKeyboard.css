@@ -132,7 +132,13 @@
 }
 
 #osk-container.is-numeric > .osk-hide,
-#osk-container.is-numeric > .osk-return {
+#osk-container.is-numeric > .osk-return,
+#osk-container.is-numeric > .osk-backspace {
 	margin: 0 0.726744186% 5px 0 !important;
 	width: 32%;
+}
+
+#osk-container.is-numeric > .osk-space {
+	width: 64.5%;
+	clear: none;
 }
